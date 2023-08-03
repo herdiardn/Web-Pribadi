@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herdi Ardana Personal Web</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Herdi<span>Ardana</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home"><strong>Home</strong></a>
+        <a href="#About">About</a>
+        <a href="#Services">Services</a>
+        <a href="#Portofolio">Portofolio</a>
+        <a href="#Contact">Contact</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="Menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <div class="row">
+          <h1>Halooo, I'm <span>Herdi Ardana</span></h1>
+          <h5>
+            <em>as Software Engineering</em>
+          </h5>
+          <br />
+          <p>
+            I'm second year software engineering student at Telkom University. I
+            have interest about anything relate IT, programming and anything
+            relevant about it.
+          </p>
+          <br />
+          <button>Download CV</button>
+        </div>
+        <div class="gambar-sec-start">
+          <img src="img/personal-web.png" alt="Budak" />
+        </div>
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section Start -->
+    <section id="About" class="About">
+      <main class="content">
+        <h2><span>About</span> Me</h2>
+        <br />
+        <p>
+          Second-year Software Engineering students at Telkom University with a
+          provisional GPA of 3.69, <br />
+          by developing some relevant hard skills while studying in the
+          programming field such as software engineering, UI/UX design,
+          application developer & front-end developer <br />
+        </p>
+        <br />
+        <br />
+        <div class="About-menu">
+          <a href="#Education" onclick="showSection('Education')"
+            ><strong>Education</strong></a
+          >
+          <a href="#Skills" onclick="showSection('Skills')">Skills</a>
+          <a href="#Experience" onclick="showSection('Experience')"
+            >Experience</a
+          >
+          <a href="#Organization" onclick="showSection('Organization')"
+            >Organization</a
+          >
+        </div>
+        <br />
+        <div id="Education" class="section-content">
+          <h5>SMAN 1 Lemahabang</h5>
+          <p>Natural Sciences</p>
+          <h5>Telkom Univeristy</h5>
+          <p>Software Engineering <br />IPK 3.69/4.00</p>
+        </div>
+        <div id="Skills" class="section-content">
+          <h5>Soft-Skills</h5>
+          <p>
+            Honesty and Responsibility, Love Challange and want to learn <br />
+            Diligent, Adaptable, Problem Solving <br />
+            Team Communication, Full Of Enthuasiasm
+          </p>
+          <h5>Hard-Skills</h5>
+          <p>
+            phyton Programming Language, java Programming Language, C#
+            Programming Language <br />
+            Html Programming Language, CSS Programming Language, JavaScript
+            Programming Language <br />
+            Microsoft Word, Microsoft Excel, Microsoft Power Point
+          </p>
+        </div>
+        <div id="Experience" class="section-content">
+          <h5>Volunteer</h5>
+          <p>Crew member SE-Now-Party anniversary student associaton</p>
+          <p>Member recruitment of new members of the organization</p>
+          <h5>Work</h5>
+          <p>Making Personal Website</p>
+        </div>
+        <div id="Organization" class="section-content">
+          <h5>Himpunan Mahasiswa S1 Rekayasa Perangkat Lunak</h5>
+          <p>Menjadi anggota dalam ruang lingkup himpunan HMPRPL</p>
+          <h5>Telkom University Badminton Club</h5>
+          <p>Menjadi tim training anggota Badminton</p>
+        </div>
+      </main>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Services Secrton -->
+    <section id="Services" class="Services">
+      <h2>My<span> Services</span></h2>
+      <br />
+      <main class="content">
+        <div>
+          <img src="img/SD.png" alt="" />
+          <div class="tittle-box"></div>
+          <div class="tittle">
+            <strong
+              >Data <br />
+              Analyst</strong
+            >
+          </div>
+        </div>
+        <div>
+          <img src="img/FE.jpg" alt="" />
+          <div class="tittle-box"></div>
+          <div class="tittle"><strong>Front-End Developer</strong></div>
+        </div>
+        <div>
+          <img src="img/UI.jpg" alt="" />
+          <div class="tittle-box"></div>
+          <div class="tittle">
+            <strong>UI/UX <br />Designer</strong>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- Portofolio Section -->
+    <section id="Portofolio" class="Portofolio">
+      <main class="content">
+        <h2>My<span> Portofolio</span></h2>
+      </main>
+    </section>
+
+    <!-- Portofolio Contact -->
+    <section id="Contact" class="Contact">
+      <main class="content">
+        <h2>Contact<span> Me</span></h2>
+        <br />
+        <form class="kontak">
+          <input type="text" placeholder="Nama" />
+          <br /><br />
+          <input type="text" placeholder="Email" />
+          <br /><br />
+          <input type="text" placeholder="Pesan" />
+          <br /><br /><br />
+          <button><strong>Submit</strong></button>
+        </form>
+      </main>
+    </section>
+    <!-- feather icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
