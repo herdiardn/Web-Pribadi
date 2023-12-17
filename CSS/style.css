@@ -1,6 +1,6 @@
 :root {
   --primary: #faed00;
-  --bg: #252525;
+  --bg: #ffffff;
 }
 
 * {
@@ -15,7 +15,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
-  color: #fff;
+  color: #000000;
   min-height: 2000px;
 }
 
@@ -25,8 +25,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 7%;
-  background-color: rgba(0, 0, 0, 1);
-  border-bottom: 1px solid #fff;
+  background-color: rgb(1, 0, 0);
+  border-bottom: 1px solid #000000;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,15 +37,15 @@ body {
 .navbar .navbar-logo {
   font-size: 2rem;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
 }
 
 .navbar .navbar-logo span {
-  color: #faed00;
+  color: #00bbfa;
 }
 
 .navbar .navbar-nav a {
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   font-size: 1.2rem;
   font-weight: 500;
@@ -53,14 +53,14 @@ body {
 }
 
 .navbar .navbar-nav a:hover {
-  color: var(--primary);
+  color: #000000;
 }
 
 .navbar .navbar-nav a::after {
   content: "";
   display: block;
   padding-bottom: 0.1rem;
-  border-bottom: 0.1rem solid #fff;
+  border-bottom: 0.1rem solid #000000;
   transform: scaleX(0);
   transition: 0.2s linear;
 }
@@ -70,11 +70,11 @@ body {
 }
 
 .navbar .navbar-extra a {
-  color: #fff;
+  color: #ffffff;
   margin: 0 0.5rem;
 }
 .navbar .navbar-extra a:hover {
-  color: var(--primary);
+  color: #00bbfa;
 }
 
 #Menu {
@@ -91,37 +91,53 @@ body {
   /* margin-right: 50rem; */
 }
 .hero h5 {
-  color: #faed00;
+  color: #00bbfa;
+  overflow: hidden;
+  border-right: 0.15em solid #00bbfa; /* Garis pinggir yang terlihat seperti sedang mengetik */
+  white-space: nowrap; /* Mencegah wrapping teks */
+  letter-spacing: 0.15em; /* Jarak antara huruf */
+  animation: typing 4s steps(40) forwards, blink-caret 0.75s step-end infinite;
 }
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000000;
+  }
+}
+
 .hero p {
   font-size: 1.5rem;
 }
+
+.hero span {
+  color: #00bbfa;
+}
 .hero button {
   font-size: 1.5rem;
-}
-.hero span {
-  color: #faed00;
-}
-.hero button {
   padding: 0.5rem 1rem;
-  background-color: #faed00;
+  background-color: #00bbfa;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 .hero button:hover {
-  background-color: #fff;
+  background-color: #a6a6a6;
 }
 
 .hero .content {
   margin-left: 25px;
+  margin-right: 25px;
   display: flex;
 }
 .hero .gambar-sec-start {
   margin-top: -7rem;
   width: 550px;
   height: 450px;
-  margin-left: 5rem;
+  margin-left: 2.5rem;
   display: flex;
   transform: translateX(0px);
   animation: float 4s ease-out infinite;
@@ -137,9 +153,6 @@ body {
     transform: translateY(0px);
   }
 }
-.hero .content .gambar-sec-start img {
-  flex-wrap: wrap;
-}
 
 /* About Section */
 .About {
@@ -147,47 +160,19 @@ body {
   padding: 8rem 7% 1.4rem;
   text-align: center;
   font-size: 1.5rem;
-  background-color: rgb(55, 55, 55);
+  background-color: #000000;
   padding-bottom: 10rem;
 }
 
-.About h2 span {
-  color: #faed00;
+.About h2 {
+  color: #00bbfa;
+}
+.About p {
+  color: #ffffff;
+  text-align: left;
 }
 #About {
   margin-top: 60px;
-}
-
-.About .About-menu a {
-  color: #faed00;
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 0 1rem;
-}
-
-.About .About-menu a:hover {
-  color: #fff;
-}
-
-.About .About-menu a::after {
-  content: "";
-  display: block;
-  padding-bottom: 0.1rem;
-  border-bottom: 0.1rem solid #fff;
-  transform: scaleX(0);
-  transition: 0.2s linear;
-}
-
-.About .About-menu a:hover::after {
-  transform: scaleX(0.5);
-}
-
-.About .section-content h5 {
-  color: aqua;
-}
-.About .section-content p {
-  font-size: small;
 }
 
 /* Services Section */
@@ -196,12 +181,12 @@ body {
   padding: 8rem 7% 1.4rem;
   text-align: center;
   font-size: 1.5rem;
-  background-color: #252525;
+  background-color: #fffdfd;
   padding-bottom: 10rem;
 }
 
 .Services h2 span {
-  color: #faed00;
+  color: #00bbfa;
 }
 #Services {
   margin-top: 0px;
@@ -265,62 +250,180 @@ body {
   transform: translateY(0%);
 }
 
-/* Portofolio Section */
-.Portofolio {
+/* Project Section */
+.Project {
   bottom: 100%;
   padding: 8rem 7% 1.4rem;
   text-align: center;
   font-size: 1.5rem;
-  background-color: rgb(55, 55, 55);
+  background-color: #00bbfa;
   padding-bottom: 10rem;
 }
 
-.Portofolio h2 span {
-  color: #faed00;
+.Project h2 span {
+  color: white;
 }
-#Portofolio {
+#Project {
   margin-top: 0px;
+}
+.Project .content {
+  display: flex;
+  flex-wrap: sans-serif;
+  gap: 20px;
+  justify-content: center;
+}
+.Project .content div {
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+.Project img {
+  margin-top: 2rem;
+  width: 350px;
+  height: 200px;
+  border-radius: 7px;
+}
+
+.Project h5 {
+  color: white;
+
+  margin-top: 10px;
+}
+.Project p,
+.Project a {
+  font-size: 12px;
+}
+.Project a:hover {
+  color: white;
 }
 
 /* Contact Section */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
 .Contact {
   bottom: 100%;
   padding: 8rem 7% 1.4rem;
-  text-align: center;
   font-size: 1.5rem;
-  background-color: #252525;
+  background-color: white;
   padding-bottom: 10rem;
 }
-
+.Contact h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
 .Contact h2 span {
-  color: #faed00;
+  color: #00bbfa;
 }
 #Contact {
   margin-top: 0px;
 }
 
-.Contact .Kontak {
-  width: 100%;
+.Contact .content {
+  display: flex;
+}
+.Contact .content .informasi {
+  margin-top: 2rem;
+}
+.Contact .content .informasi .icon {
+  font-size: 15px;
+}
+.Contact .content .informasi .icon strong {
+  color: aqua;
+}
+.Contact .content .informasi .icon span i {
+  color: #00bbfa;
+  font-size: 30px;
+}
+.Contact .content strong {
+  color: aqua;
+}
+
+/* .Contact .content .wrapper .icon {
+  position: relative;
+  background-color: #00bbfa;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Contact .content .wrapper .icon:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.Contact .content .wrapper .icon:hover span,
+.Contact .content .wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 1);
+}
+
+.Contact .content .wrapper .Fb:hover {
+  background: #ff2200;
+  color: #fff;
+}
+
+.Contact .content .wrapper .ig:hover {
+  background: #7d4300;
+  color: #fff;
+}
+.Contact .content .wrapper .github:hover {
+  background: #008e18;
+  color: #fff;
+} */
+
+.Contact .content .send {
+  width: 50%;
   margin: 0;
   display: grid;
   gap: 16px;
+  position: relative;
+  z-index: 3;
+  margin-top: 10px;
+  margin-left: 200px;
+
+  padding: 30px 30px 30px;
+  background: #00bbfa;
+  border-radius: 1.25rem;
 }
-.Contact input {
-  width: 40%;
-  height: 40px;
-  font-size: 20px;
+.Contact .content .send input,
+.Contact .content .send button {
+  width: 100%;
+  height: 50px;
+}
+.Contact .content .send input {
+  border: 2px #252525;
   padding: 0 25px;
   border-radius: 14px;
-  transition: all 0.5s;
+  transition: all 0.375s;
 }
-.Contact button {
-  color: #545454;
-  background-color: #faed00;
-  width: 20%;
-  height: 40px;
-  font-size: 15px;
-  border-radius: 20px 0 20px 0;
+.Contact .content .send input:hover {
+  border: 2px #252525;
 }
+.Contact .content .send button {
+  cursor: pointer;
+  width: 100%;
+  padding: 16px;
+  border-radius: 25px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 0;
+  transition: all 0.3s;
+}
+.Contact .content .send button:hover {
+  background: #7d7d7d;
+}
+
 /* Media Queries */
 
 /* Laptop */
@@ -332,7 +435,16 @@ body {
     width: 400px;
     height: 300px;
   }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: calc(54% - 0.15em);
+    }
+  }
 }
+
 /* Tablet */
 @media (max-width: 768px) {
   html {
@@ -346,7 +458,7 @@ body {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: #fff;
+    background-color: #00bbfa;
     width: 30rem;
     height: 100vh;
     transition: 0.5s;
@@ -361,9 +473,45 @@ body {
     padding: 0.5rem;
     font-size: 2rem;
   }
-  .gambar-sec-start {
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.3);
+  }
+
+  .hero .content img {
+    margin-top: 10rem;
     width: 300px;
-    height: 225px;
+    height: 325px;
+  }
+  .hero .content {
+    flex-wrap: wrap;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: calc(43% - 0.15em);
+    }
+  }
+  .Services .content {
+    flex-wrap: wrap;
+  }
+  .Project .content {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .Contact .content {
+    flex-wrap: wrap;
+    /* justify-content: center; */
+  }
+  .Contact .content .send {
+    width: 100%; /* Mengisi lebar layar penuh */
+    margin-left: 0; /* Menghapus margin kiri pada perangkat mobile */
+    margin-top: 30px;
   }
 }
 /* Mobile */
@@ -374,5 +522,56 @@ body {
   .gambar-sec-start {
     width: 200px;
     height: 150px;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+
+    background-color: #00bbfa;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.5s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.3);
+  }
+  .hero .content img {
+    margin-top: 10rem;
+    width: 300px;
+    height: 325px;
+  }
+  .hero .content {
+    flex-wrap: wrap;
+  }
+  .Project .content {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  /* .Project .content img {
+  } */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: calc(75% - 0.15em);
+    }
+  }
+  .Services .content {
+    flex-wrap: wrap;
   }
 }
